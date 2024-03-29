@@ -89,7 +89,7 @@ epochs = 5
 
 # networkinputlen = resize * resize
 
-tau = 128#128#100000 # 300ms if use exp decay for preprocessing
+tau = 64#128#100000 # 300ms if use exp decay for preprocessing
 
 global prefix
 
@@ -909,7 +909,8 @@ initializetsandpolmap(5,lastts)
 
 wkfiles1 = []
 # wkfiles1 = ['0314l216bitsqtanhputbin100tau' + str(bits) + 'bitaw' + str(repeat) + 'MSEO1' + middle + '10_linear_7weights.h5']
-wkfiles1 = ['software-0314-tanhmodel.h5']
+# wkfiles1 = ['software-0314-tanhmodel.h5']
+wkfiles1 = ['0316_soft_4bit_alpha1_sigmoid.h5']
 # bits = [i for i in range(2,9)]
 bits = [3]
 middle = 'qsingle'
